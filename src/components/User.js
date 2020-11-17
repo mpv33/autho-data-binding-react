@@ -27,8 +27,9 @@ class User extends Component {
   }
   render() {
     return (
-      <div className="login-form">
-
+      <div >
+        <NavigationBar/>
+        <div className="login-form">
         <div>
           <span>First Name: </span>
           <input
@@ -58,6 +59,8 @@ class User extends Component {
           ref={(input) => { this.submit = input; }}
         />
          </div>
+       </div>
+        
       </div>
     );
   }

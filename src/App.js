@@ -11,10 +11,11 @@ import Home  from './Home';
 function App() {
   return (
       <Router>
-        <NavigationBar />
+       
          
-          <Route  path="/"  exact component={Home} />
-          <Route path="/login" exact component={User} />
+        <Route path="/"  exact strict component={Home} />
+        <Route path="/login" exact strict component={User} />
+        <NavigationBar />
 
         
       </Router>
