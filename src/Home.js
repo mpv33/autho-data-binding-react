@@ -4,12 +4,13 @@ import Iframe from 'react-iframe'
 
 const Home = (props) => (
  <div className='App' >
-   
-       <div className='view1'>   
+      
+  <div className='view1'>
+        {props.data}
+  </div>
+      
 
-       {props.love} 
-
-      </div>
+      
        
  </div>
 )

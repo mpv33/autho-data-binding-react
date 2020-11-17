@@ -10,8 +10,11 @@
 .view1{
   height: 50vh;
   width: 50%;
-  border: 1px solid red;
+  border: 2px solid violet;
   text-align: center;
 }
 
+.login-form{
+  text-align: center;
+}
 

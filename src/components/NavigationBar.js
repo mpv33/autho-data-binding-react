@@ -23,13 +23,20 @@ const Styles = styled.div`
 `;
 class NavigationBar extends Component{
   state={
-    love:''
+    data:'',
+    username:'UserName'
   }
   
 changebyinput = (a) => {
   //const local = this.state.love=a.target.value
   this.setState({
-    love: a.target.value
+    data: a.target.value
+  })
+}
+changebyname = (a) => {
+  //const local = this.state.love=a.target.value
+  this.setState({
+    username: a.target.value
   })
 }
   render(){
@@ -39,16 +46,16 @@ changebyinput = (a) => {
         <Navbar.Brand href="/">UserName</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Form className="form-center">
-          <FormControl type="text" placeholder="Enter Web URL  " className="input-box" onChange={this.changebyinput} value={this.state.love} />
+          <FormControl type="text" placeholder="Enter data  " className="input-box" onChange={this.changebyinput} value={this.state.data} />
         </Form>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
            
-            <Nav.Item><Nav.Link href="/login">Login</Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link href="/login" >Login</Nav.Link></Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <Home love={this.state.love}/>
+      <Home data={this.state.data}/>
     </Styles>
     )
     
